@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+  <h1>Cardio Vascular Details</h1>
+  <h2>Please enter Values below</h2>
+</head>
+<body>
+<form action = "{{url_for('predict')}}" method="post">
+  <div>
+    <label for="gender">gender:</label>
+    <input for="text" id = "gender" name="gender" placeholder="enter your gender here">
+  </div>
+
+    <br>
+
+    <div>
+        <label for="height">height:</label>
+        <input type="text" id = "height" name="height" placeholder="enter your height here">
+
+
+    </div>
+       <br>
+
+    <div>
+        <label for="weight">weight:</label>
+        <input type="text" id ="weight" name="weight" placeholder="enter your weight here">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="ap_hi">ap_hi:</label>
+        <input type = "text" id="ap_hi" name="ap_hi" placeholder = "please enter values here">
+    </div>
+
+    <br>
+    <div>
+        <label for="ap_lo">ap_lo:</label>
+        <input type=text" id="ap_lo" name="ap_lo" placeholder = "please enter values here">
+
+    </div>
+
+    <br>
+
+    <div>
+        <label for="cholesterol">cholesterol:</label>
+        <input type="text" id = "cholesterol" name="cholesterol" placeholder="enter values here">
+
+    </div>
+
+    <br>
+
+    <div>
+        <label for="gluc">gluc:</label>
+        <input type="text" id="gluc" name="gluc" placeholder="enter glucose values here">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="smoke">smoke:</label>
+        <input type="text" id="smoke" name="smoke" placeholder="enter smoke values here">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="alco">alco:</label>
+        <input type="text" id="alco" name="alco" placeholder="enter alcohol values here">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="active">active:</label>
+        <input type="text" id="active" name="active" placeholder="enter values here">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="age_years">age_years:</label>
+        <input type="text" id="age_years" name="age_years" placeholder="please enter age here">
+    </div>
+    <br>
+
+    <div>
+        <label for="bmi">bmi:</label>
+        <input type="text" id="bmi" name="bmi" placeholder="enter bmi values here">
+    </div>
+    <br>
+
+    <div>
+        <label for="bp_category">bp_category:</label>
+        <input type="text" id="bp_category" name="bp_category" placeholder="enter bp_cat values here ">
+    </div>
+    <br>
+
+    <div>
+    <input type="submit" value="Predict">
+    </div>
+    <br>
+
+    {{ prediction_text }}
+
+</form>
+
+</body>
+</html>
